@@ -1,0 +1,16 @@
+.button {
+  width: 95%;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-family: "Open sanse", sans-serif;
+  background-color: $btn-bg-color;
+  color: $primary;
+  border: none;
+  outline: none;
+  margin: 0.8rem 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $btn-bg-hover;
+  }
+}

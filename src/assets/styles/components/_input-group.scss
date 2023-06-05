@@ -1,0 +1,40 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 95%;
+  line-height: 1.5;
+  &__label {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: $primary;
+    @include breakpoints(489px) {
+      font-size: 1.1rem;
+    }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary;
+    box-shadow: 0 0 1px $bg-dark;
+    border-radius: 0.3rem;
+  }
+  &__input {
+    display: block;
+    outline: none;
+    padding: 0.8rem;
+    border: none;
+
+    border-radius: 0.3rem;
+    width: 95%;
+  }
+  &__icon {
+    color: gray;
+    font-size: 1.2rem !important;
+    margin-right: 0.5rem;
+  }
+}

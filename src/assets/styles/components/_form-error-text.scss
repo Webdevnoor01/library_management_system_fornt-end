@@ -1,0 +1,14 @@
+.form__error {
+  font-size: 0.7rem;
+  color: darken($color: $error-color, $amount: 2);
+  font-weight: 600;
+  font-family: "Open sans", sans-serif;
+  text-align: left;
+  display: block;
+  width: 95%;
+  padding: 0.4rem 0;
+
+  @include breakpoints(490px) {
+    font-size: 0.9rem;
+  }
+}

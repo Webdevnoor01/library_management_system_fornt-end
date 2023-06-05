@@ -1,0 +1,50 @@
+.signup {
+  width: 90%;
+  max-width: 64rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 0.5rem;
+  box-shadow: 1px 0px 6px gray;
+  margin: 1.5rem;
+  z-index: 9999;
+  position: relative;
+  &__media {
+    display: none;
+    @include breakpoints(486px) {
+      display: flex;
+      width: 50%;
+    }
+  }
+  &__img {
+    max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 1;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  &__content {
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    @include breakpoints(486px) {
+      width: 50%;
+    }
+  }
+  &__heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem 0;
+    font-weight: 600;
+    color: $primary;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
