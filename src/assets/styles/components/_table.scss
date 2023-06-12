@@ -1,0 +1,64 @@
+.tableContainer {
+  position: relative;
+  overflow-x: auto;
+  background-color: $primary;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    font-family: "Open sans", sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid $base-border-clr;
+    width: 100%;
+    background-color: $secondary;
+    color: $txt-clr;
+    & > h3 {
+      font-family: "Open sans", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    & > a {
+      border: 1px solid $indigo;
+      background-color: $primary;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.3rem;
+      color: $txt-clr;
+      font-size: 1rem;
+    }
+  }
+  &__table {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: left;
+    font-family: "Open sans", sans-serif;
+  }
+  &__thead {
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+  }
+  &__tr {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid $base-border-clr;
+  }
+  &__td {
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: $txt-clr;
+  }
+
+  &__actions {
+    @include flex-sb-c;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  padding: 1rem;
+  background-color: $secondary;
+  height: calc(100vh - 63.9931px);
+  border-top-left-radius: 1.5rem;
+  margin-top: 4rem;
+  @include breakpoints(769px) {
+    width: calc(100vw - 225px);
+    height: auto;
+  }
+}

@@ -1,0 +1,149 @@
+.dashboard {
+  &__header {
+    padding: 1rem 0;
+  }
+  &__heading {
+    font-size: 2rem;
+    font-family: "Open sans", sans-serif;
+  }
+  &__username {
+    color: $btn-bg-color;
+    font-weight: bold;
+  }
+  &__cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+
+    @include breakpoints(490px) {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 1rem;
+    }
+  }
+  &__card {
+    @include flex-sb-s;
+    padding: 0.5rem;
+    background-color: $primary;
+    border-radius: 0.5rem;
+    box-shadow: $base-shadow;
+    @include breakpoints(490px) {
+      padding: 1rem;
+    }
+  }
+  &__content {
+    line-height: 2;
+  }
+  &__value {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: $txt-clr;
+    @include breakpoints(490px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__title {
+    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: $txt-clr;
+    @include breakpoints(490px) {
+      font-size: 1.1rem;
+    }
+  }
+  &__icondiv {
+    @include flex-c-c;
+    background-color: $btn-bg-color;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+    @include breakpoints(490px) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  &__icon {
+    color: $primary;
+    height: 20px !important;
+    width: 20px !important;
+    @include breakpoints(490px) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  &__overview {
+    @include flex-sb-c-wr;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    gap: 1rem;
+
+    @include breakpoints(768px) {
+      gap: 0.5rem;
+    }
+  }
+  &__bar-chart {
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: $primary;
+    box-shadow: $base-shadow;
+
+    @include breakpoints(769px) {
+      height: 22.875rem;
+      width: 65%;
+    }
+    @include breakpoints(1024px) {
+      width: 68%;
+    }
+  }
+  &__pi-chart {
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: $primary;
+    box-shadow: $base-shadow;
+
+    @include breakpoints(769px) {
+      height: 22.875rem;
+      width: 30%;
+    }
+  }
+  &__chart-heading {
+    font-family: "Open sans", sans-serif;
+    font-weight: bold;
+    color: #4e4e4e;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid $base-border-clr;
+  }
+  &__tables {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  &__recent-request {
+    width: 100%;
+    box-shadow: $base-shadow;
+    border-radius: 0.3rem;
+    @include breakpoints(768px) {
+      width: 49%;
+    }
+  }
+  &__return-request {
+    width: 100%;
+    box-shadow: $base-shadow;
+    border-radius: 0.3rem;
+    @include breakpoints(768px) {
+      width: 49%;
+    }
+  }
+  &__overdued-books {
+    width: 100%;
+    box-shadow: $base-shadow;
+    border-radius: 0.3rem;
+  }
+}

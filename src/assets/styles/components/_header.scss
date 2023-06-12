@@ -1,0 +1,85 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: auto;
+  height: 4rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: $primary;
+  z-index: 1000;
+  @include breakpoints(769px) {
+    width: calc(100vw - 225px);
+    left: 210px;
+  }
+
+  @include flex-sb-c;
+  &__left {
+    width: 45%;
+    @include flex-sb-c;
+    @include breakpoints(490px) {
+      width: 10%;
+    }
+  }
+  &__toggle {
+    height: 30px;
+    width: 30px;
+    @include flex-c-c;
+    border-radius: 0.3rem;
+    background-color: $btn-bg-color;
+    cursor: pointer;
+  }
+  &__menu {
+    color: #ffffff;
+  }
+  &__center {
+    @include flex-c-c;
+    width: 0%;
+    @include breakpoints(490px) {
+      width: 40%;
+    }
+  }
+
+  &__search {
+    display: none;
+    padding: 0.7rem 2rem;
+    outline: none;
+    border: none;
+    background-color: $secondary;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: "Open sans", sans-serif;
+    width: 100%;
+    &:focus {
+      border: 1px solid #4b0082;
+    }
+    @include breakpoints(490px) {
+      display: block;
+    }
+  }
+  &__right {
+    @include flex-sb-c;
+  }
+  &__user-info {
+    @include flex-c-e-cl;
+    padding-right: 0.3rem;
+  }
+  &__user-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Open-sans", sans-serif;
+  }
+  &__user-role {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: "Open-sans", sans-serif;
+  }
+
+  &__user-logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: 5px 12px 26px -7px rgba(0, 0, 0, 0.1);
+  }
+}

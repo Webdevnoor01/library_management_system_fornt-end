@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import shortid from "shortid";
 
-const Select = ({ name, value, onChange, onBlur, options }) => {
+const Select = ({ name, value, onChange, onBlur, options, styles }) => {
   return (
     <select
       name={name}
@@ -9,6 +9,7 @@ const Select = ({ name, value, onChange, onBlur, options }) => {
       onChange={onChange}
       onBlur={onBlur}
       className="select"
+      style={styles}
     >
       {options.map((option) => (
         <option key={shortid.generate()} value={option.value}>

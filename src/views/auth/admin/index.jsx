@@ -8,6 +8,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
+// react-router-dom
+import { useNavigate } from "react-router-dom";
+
 import Container from "../../../components/container";
 
 // mui icons
@@ -31,6 +34,7 @@ const AdminLogin = () => {
   const { errorMessage, successMessage, loading } = useSelector(
     (state) => state.auth
   );
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
@@ -85,6 +89,7 @@ const AdminLogin = () => {
     }
     if (successMessage) {
       toast.success(successMessage);
+      navigate("/admin/dashboard");
     }
     dispatch(resetMessages());
   }, [errorMessage, successMessage]);

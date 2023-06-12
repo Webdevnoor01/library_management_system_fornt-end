@@ -1,0 +1,112 @@
+.books {
+  height: 100vh;
+  &__breadcrumb {
+    @include flex-fs-c;
+    width: 100%;
+    background: lighten($color: $primary, $amount: 10);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    box-shadow: $base-shadow;
+  }
+  &__breadcrumb-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    & > a {
+      color: lighten($color: $txt-clr, $amount: 10);
+    }
+  }
+  &__breadcrumb-icon {
+    color: $btn-bg-color;
+    font-size: 2rem !important ;
+    height: 2rem;
+    width: 2rem;
+  }
+  &__books-preview {
+    width: 100%;
+    height: auto;
+    @include flex-sb-s;
+    flex-wrap: wrap-reverse;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  &__book-table {
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: $primary;
+    box-shadow: $base-shadow;
+    @include breakpoints(769px) {
+      width: 54%;
+    }
+  }
+
+  &__header {
+    @include flex-sb-c;
+    width: 100%;
+    padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+  }
+  &__select {
+    width: 30%;
+  }
+  &__search {
+    width: 50%;
+  }
+
+  &__pagination {
+    width: 100%;
+    @include flex-fs-c;
+    padding: 0.5rem 0;
+  }
+
+  &__add-book {
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: $primary;
+    box-shadow: $base-shadow;
+    @include breakpoints(769px) {
+      width: 44%;
+    }
+  }
+
+  &__addBook-heading {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid $base-border-clr;
+    & h2 {
+      font-size: 1.3rem;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  &__input-group {
+    width: 100%;
+    @include flex-sb-c;
+    padding: 0.2rem 0;
+  }
+  &__single-input {
+    @include flex-c-c;
+    padding: 0.2rem 0.45rem;
+    width: 100%;
+  }
+
+  &__first-input {
+    width: 49%;
+  }
+  &__second-input {
+    width: 49%;
+  }
+  &__image-group {
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+  }
+  &__image-input {
+    border: 1px dashed $base-border-clr;
+    min-height: 8rem;
+    @include flex-c-c;
+    cursor: pointer;
+  }
+
+  &__btn-group {
+    width: 100%;
+    padding: 0.2rem 0rem;
+    @include flex-c-c;
+  }
+}

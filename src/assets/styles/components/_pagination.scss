@@ -1,0 +1,42 @@
+.pagination {
+  width: 100%;
+  @include flex-sb-c;
+  gap: 1rem;
+  padding: 0 0.5rem;
+  @include breakpoints(769px) {
+    width: 50%;
+  }
+
+  &__left {
+    width: 10%;
+  }
+  &__center {
+    width: 80%;
+    @include flex-sb-c;
+  }
+
+  &__right {
+    width: 10%;
+    text-align: right;
+  }
+
+  &__item {
+    padding: 0.4rem 1rem;
+    border-radius: 0.3rem;
+    background: darken($color: $secondary, $amount: 5);
+    color: $txt-clr;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    &:hover {
+      background: $btn-bg-color;
+      color: #fff;
+    }
+  }
+  &__icon {
+    color: $indigo !important;
+  }
+  &__active {
+    background: $btn-bg-color;
+    color: #fff;
+  }
+}

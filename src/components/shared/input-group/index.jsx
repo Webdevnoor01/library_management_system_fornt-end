@@ -8,10 +8,17 @@ const InputGroup = ({
   Icon,
   onChange,
   onBlur,
+  color,
 }) => {
   return (
     <div className="inputGroup">
-      <label htmlFor={name} className="inputGroup__label">
+      <label
+        htmlFor={name}
+        className="inputGroup__label"
+        style={{
+          color: color,
+        }}
+      >
         {label}
       </label>
       <div className="inputGroup__wrap">
@@ -24,7 +31,7 @@ const InputGroup = ({
           onChange={onChange}
           onBlur={onBlur}
         />
-        <Icon className="inputGroup__icon" />
+        {Icon && <Icon className="inputGroup__icon" />}
       </div>
     </div>
   );

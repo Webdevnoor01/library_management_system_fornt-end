@@ -1,18 +1,35 @@
 @import "./base/reset.scss";
 @import "./variables/variables";
 
-// breakpoints
+// midins
 @import "./mixins/breakpoints";
+@import "./mixins/flex";
 
 // shared components
 @import "./components/input-group";
 @import "./components/select";
 @import "./components/form-error-text";
+@import "./components/pagination";
 
 // ui components
 @import "./components/button";
 
-// components
+// auth components
 @import "./components/container";
 @import "./components/signup";
 @import "./components/login";
+
+// layout components
+@import "./components/header";
+@import "./components/sidebar";
+@import "./components/main";
+
+// helper components
+@import "./components/action-view";
+@import "./components/action-edit";
+@import "./components/action-delete";
+
+// components
+@import "./components/table";
+@import "./components/dashboard";
+@import "./components/books";
