@@ -14,13 +14,13 @@ const Table = ({ thead, tbody, heading, isDashboard }) => {
       )}
       <table className="tableContainer__table ">
         <thead className="tableContainer__thead">
-          <tr>
+          <tr className="tableContainer__tr">
             {thead &&
               thead.map((thData) => (
                 <th
                   key={shortid.generate()}
                   scope="col"
-                  className="tableContainer__tr"
+                  className="tableContainer__th"
                 >
                   {thData}
                 </th>
@@ -37,7 +37,7 @@ const Table = ({ thead, tbody, heading, isDashboard }) => {
                     scope="col"
                     className="tableContainer__td"
                   >
-                    {tdData}
+                    <div className="tableContainer__td-div"> {tdData}</div>
                   </td>
                 ))}
               </tr>

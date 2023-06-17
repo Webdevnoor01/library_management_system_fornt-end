@@ -1,4 +1,4 @@
-.books {
+.libraryCard {
   height: 100vh;
   &__breadcrumb {
     @include flex-fs-c;
@@ -18,14 +18,11 @@
   }
   &__breadcrumb-icon {
     color: $btn-bg-color;
-    font-size: 1rem !important ;
+    font-size: 2rem !important ;
     height: 2rem;
     width: 2rem;
-    @include breakpoints(769px) {
-      font-size: 2rem !important  ;
-    }
   }
-  &__books-preview {
+  &__libraryCard-preview {
     width: 100%;
     height: auto;
     @include flex-sb-s;
@@ -33,13 +30,13 @@
     margin-top: 2rem;
     gap: 1rem;
   }
-  &__book-table {
+  &__libraryCard-table {
     width: 100%;
     border-radius: 0.3rem;
     background-color: $primary;
     box-shadow: $base-shadow;
     @include breakpoints(1025px) {
-      width: 63%;
+      width: 65%;
     }
   }
 
@@ -64,17 +61,17 @@
     }
   }
 
-  &__add-book {
+  &__add-card {
     width: 100%;
     border-radius: 0.3rem;
     background-color: $primary;
     box-shadow: $base-shadow;
     @include breakpoints(1025px) {
-      width: 35%;
+      width: 33%;
     }
   }
 
-  &__addBook-heading {
+  &__addCard-heading {
     padding: 1rem 0.5rem;
     border-bottom: 1px solid $base-border-clr;
     & h2 {

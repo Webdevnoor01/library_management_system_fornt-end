@@ -11,10 +11,6 @@
   &:hover {
     box-shadow: 0 2px 9px lighten($color: red, $amount: 5);
   }
-  &[title]:hover {
-    background-color: $secondary;
-    color: $txt-clr;
-  }
   &__icon {
     height: 1rem !important ;
     width: 2rem !important;

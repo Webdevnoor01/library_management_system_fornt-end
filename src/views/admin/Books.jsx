@@ -23,6 +23,7 @@ const Books = () => {
       "Book Id",
       "Book Name",
       "Author Name",
+      "Book Image",
       "Edition",
       "Quantity",
       "Actions",
@@ -32,6 +33,9 @@ const Books = () => {
         "dksje23",
         "Data Structure",
         "Samim Sk",
+        <span className="tableContainer__image">
+          <img src="../../images/books/ds.png" alt="book image" />
+        </span>,
         210,
         21,
         <span className="tableContainer__actions">
@@ -44,6 +48,9 @@ const Books = () => {
         "dksje23",
         "Data Structure",
         "Rabiul Sk",
+        <span className="tableContainer__image">
+          <img src="../../images/books/ds.png" alt="book image" />
+        </span>,
         150,
         15,
         <span className="tableContainer__actions">
@@ -56,6 +63,9 @@ const Books = () => {
         "dksje23",
         "Data Structure",
         "Mohasin Raja",
+        <span className="tableContainer__image">
+          <img src="../../images/books/ds.png" alt="book image" />
+        </span>,
         100,
         10,
         <span className="tableContainer__actions">
@@ -68,6 +78,9 @@ const Books = () => {
         "dksje23",
         "Data Structure",
         "Mohasin Raja",
+        <span className="tableContainer__image">
+          <img src="../../images/books/ds.png" alt="book image" />
+        </span>,
         500,
         30,
         <span className="tableContainer__actions">
@@ -80,6 +93,9 @@ const Books = () => {
         "dksje23",
         "Data Structure",
         "Mohasin Raja",
+        <span className="tableContainer__image">
+          <img src="../../images/books/ds.png" alt="book image" />
+        </span>,
         200,
         20,
         <span className="tableContainer__actions">

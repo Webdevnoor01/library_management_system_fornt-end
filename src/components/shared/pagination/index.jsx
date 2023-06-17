@@ -46,7 +46,7 @@ const pagination = ({
     <div className="pagination">
       <div
         className="pagination__left"
-        onClick={() => setCurrentPage((prevPage) => prevPage + 1)}
+        onClick={() => setCurrentPage((prevPage) => prevPage - 1)}
       >
         {pageNumber > 1 && (
           <ArrowCircleLeftSharpIcon className="pagination__icon" />
@@ -57,7 +57,7 @@ const pagination = ({
         className="pagination__right"
         onClick={() => setCurrentPage((prevPage) => prevPage + 1)}
       >
-        {pageNumber < totalPage && (
+        {pageNumber <= totalPage && (
           <ArrowCircleRightSharpIcon className="pagination__icon" />
         )}
       </div>

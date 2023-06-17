@@ -33,7 +33,10 @@
     }
   }
   &__icon {
-    color: $indigo !important;
+    color: darken($color: $secondary, $amount: 10) !important;
+    height: 2rem !important ;
+    width: 2rem !important;
+    cursor: pointer;
   }
   &__active {
     background: $btn-bg-color;
