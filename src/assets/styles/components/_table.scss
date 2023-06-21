@@ -79,7 +79,20 @@
       }
     }
   }
-
+  &__image-user{
+    height: 2rem;
+    width: 5rem;
+    & > img {
+      box-shadow: $base-shadow;
+      height: 100%;
+      width: 2rem;
+      border-radius: 0.3rem;
+      border-radius:100%;
+      @include breakpoints(769px) {
+        width: 3rem;
+      }
+    }
+  }
   &__actions {
     @include flex-sb-c;
     gap: 0.5rem;

@@ -5,6 +5,7 @@ const AdminDashboard = lazy(() => import("../views/admin/AdminDashboard"));
 const LibraryCard = lazy(() => import("../views/admin/LibraryCard"));
 const Users = lazy(() => import("../views/admin/Users"));
 const RequestedBooks = lazy(() => import("../views/admin/RequestedBooks"));
+const ReturnRequest = lazy(() => import("../views/admin/ReturnRequest"));
 
 export const adminRoutes = [
   {
@@ -44,6 +45,14 @@ export const adminRoutes = [
     element: (
       <Suspense fallback="loading...">
         <RequestedBooks />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/admin/return-request",
+    element: (
+      <Suspense fallback="loading...">
+        <ReturnRequest />
       </Suspense>
     ),
   },
